@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.13.4"
+    "lerna": "^3.15.0"
   }
 }
