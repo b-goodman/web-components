@@ -1,5 +1,5 @@
 import { PolymerElement, html } from "@polymer/polymer/polymer-element";
-import {customElement, property, query} from "@polymer/decorators";
+import {customElement, property} from "@polymer/decorators";
 import WolframNotebookEmbedder, { EmbeddedNotebook, EmbeddedNotebookEvents } from "wolfram-notebook-embedder";
 import * as template from "./template.html";
 
