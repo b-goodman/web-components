@@ -1,16 +1,16 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
+  mode: "production",
   entry: {
     // vendor: ['./src/vendor'],
     app: './src/index'
   },
   output: {
-    filename: '[name].[chunkhash].js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -33,15 +33,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: './index.html'
-    }),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, './node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js')
-      }
-    ]),
     // get around with stupid warning
     new webpack.IgnorePlugin(/vertx/),
-  ]
+  ],
+  // optimization: {
+  //   minimizer: [
+  //       new TerserPlugin({
+  //           terserOptions: {
+  //           output: {
+  //               comments: false
+  //           }
+  //           }
+  //       })
+  //   ],
+  // }
 };
