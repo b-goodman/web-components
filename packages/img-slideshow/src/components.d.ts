@@ -23,7 +23,7 @@ export namespace Components {
     */
     'src': string;
     /**
-    * Optionally request that all URLs are filtered by a HTTP 200 status code.  For example:  ```html <img-slideshow src='["/realImgs/1.png", "/fakeImgs/1.png", "/realImgs/2.png"]' validate-urls /> ```  would be the same as  ```html <img-slideshow src='["/realImgs/1.png", "/realImgs/2.png"]' validate-urls /> ```
+    * Optionally request that all URLs are filtered by a HTTP 200 status code.  For example:  ```html <img-slideshow src='["/exists/1.png", "/notfound/1.png", "/exists/2.png"]' validate-urls /> ```  would be the same as  ```html <img-slideshow src='["/exists/1.png", "/exists/2.png"]' validate-urls /> ```
     */
     'validateUrls'?: boolean;
   }
@@ -58,7 +58,7 @@ declare namespace LocalJSX {
     */
     'src'?: string;
     /**
-    * Optionally request that all URLs are filtered by a HTTP 200 status code.  For example:  ```html <img-slideshow src='["/realImgs/1.png", "/fakeImgs/1.png", "/realImgs/2.png"]' validate-urls /> ```  would be the same as  ```html <img-slideshow src='["/realImgs/1.png", "/realImgs/2.png"]' validate-urls /> ```
+    * Optionally request that all URLs are filtered by a HTTP 200 status code.  For example:  ```html <img-slideshow src='["/exists/1.png", "/notfound/1.png", "/exists/2.png"]' validate-urls /> ```  would be the same as  ```html <img-slideshow src='["/exists/1.png", "/exists/2.png"]' validate-urls /> ```
     */
     'validateUrls'?: boolean;
   }

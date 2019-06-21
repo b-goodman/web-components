@@ -63,13 +63,13 @@ export class ImgSlideshow {
    * Optionally request that all URLs are filtered by a HTTP 200 status code.  For example:
    *
    * ```html
-   * <img-slideshow src='["/realImgs/1.png", "/fakeImgs/1.png", "/realImgs/2.png"]' validate-urls />
+   * <img-slideshow src='["/exists/1.png", "/notfound/1.png", "/exists/2.png"]' validate-urls />
    * ```
    *
    * would be the same as
    *
    * ```html
-   * <img-slideshow src='["/realImgs/1.png", "/realImgs/2.png"]' validate-urls />
+   * <img-slideshow src='["/exists/1.png", "/exists/2.png"]' validate-urls />
    * ```
    */
   @Prop() validateUrls?: boolean
