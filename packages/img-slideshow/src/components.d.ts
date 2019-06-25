@@ -11,7 +11,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface ImgSlideshow {
     /**
-    * Optionally specify a value to place before *all* paths provided in `src`. For example:  ```html <img-slideshow base-url="https://picsum.photos" src='["/200/300", "/200/300"]' /> ```` would be the same as  ```html <img-slideshow src='["https://picsum.photos/200/300", "https://picsum.photos/200/300"]' /> ````
+    * Optionally specify a value to place before *all* paths provided in `src`. For example:  ```html <img-slideshow base-url="https://picsum.photos" src='["/200/300", "/200/300"]' /> ``` would be the same as  ```html <img-slideshow src='["https://picsum.photos/200/300", "https://picsum.photos/200/300"]' /> ```
     */
     'baseUrl'?: string;
     /**
@@ -45,7 +45,7 @@ declare global {
 declare namespace LocalJSX {
   interface ImgSlideshow extends JSXBase.HTMLAttributes<HTMLImgSlideshowElement> {
     /**
-    * Optionally specify a value to place before *all* paths provided in `src`. For example:  ```html <img-slideshow base-url="https://picsum.photos" src='["/200/300", "/200/300"]' /> ```` would be the same as  ```html <img-slideshow src='["https://picsum.photos/200/300", "https://picsum.photos/200/300"]' /> ````
+    * Optionally specify a value to place before *all* paths provided in `src`. For example:  ```html <img-slideshow base-url="https://picsum.photos" src='["/200/300", "/200/300"]' /> ``` would be the same as  ```html <img-slideshow src='["https://picsum.photos/200/300", "https://picsum.photos/200/300"]' /> ```
     */
     'baseUrl'?: string;
     /**

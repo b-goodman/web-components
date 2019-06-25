@@ -1,8 +1,8 @@
 {
   "name": "img-slideshow",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
-  "main": "dist/index.js",
+  "version": "0.1.1",
+  "description": "An intuitive Web Component for displaying a slideshow of images.",
+  "main": "dist/img-slideshow.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
@@ -12,7 +12,8 @@
   "unpkg": "dist/img-slideshow/img-slideshow.js",
   "files": [
     "dist/",
-    "loader/"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "stencil build --docs",
@@ -21,10 +22,21 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
-    "@stencil/core": "^1.0.7"
+    "@stencil/core": "^1.0.7",
+    "@types/jest": "^24.0.15",
+    "@types/puppeteer": "1.12.4",
+    "jest": "24.8.0",
+    "jest-cli": "24.8.0",
+    "puppeteer": "1.17.0"
   },
   "license": "MIT",
-  "dependencies": {
-    "@types/jest": "^24.0.15"
-  }
+  "keywords": [
+    "stencil",
+    "stenciljs",
+    "typescript",
+    "web components",
+    "slideshow",
+    "img",
+    "image"
+  ]
 }

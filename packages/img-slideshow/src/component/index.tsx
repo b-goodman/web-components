@@ -41,12 +41,12 @@ export class ImgSlideshow {
    *
    * ```html
    * <img-slideshow base-url="https://picsum.photos" src='["/200/300", "/200/300"]' />
-   * ````
+   * ```
    * would be the same as
    *
    * ```html
    * <img-slideshow src='["https://picsum.photos/200/300", "https://picsum.photos/200/300"]' />
-   * ````
+   * ```
    */
   @Prop() baseUrl?: string = undefined;
 
@@ -109,7 +109,7 @@ export class ImgSlideshow {
   }
 
   componentWillLoad(){
-    this.intervalID = setInterval( this.nextSlide, this.interval)
+    this.intervalID = window.setInterval( this.nextSlide, this.interval)
   }
 
   disconnectedCallback(){

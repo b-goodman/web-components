@@ -2,7 +2,7 @@ import { getStatus } from '.';
 
 describe( getStatus, () => {
   it('returns 200 for existant web asset', () => {
-    expect(getStatus("https://demonstrations.wolfram.com/01KnapsackProblem/img/thumbnail_1.png")).resolves.toBe(200);
+    expect(getStatus("https://picsum.photos/200/300")).resolves.toBe(200);
   });
 
 
