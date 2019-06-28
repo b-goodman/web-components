@@ -171,7 +171,7 @@
     p-map-series "^1.0.0"
     p-waterfall "^1.0.0"
 
-"@lerna/cli@3.13.0":
+"@lerna/cli@3.13.0", "@lerna/cli@^3.13.0":
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/@lerna/cli/-/cli-3.13.0.tgz#3d7b357fdd7818423e9681a7b7f2abd106c8a266"
   integrity sha512-HgFGlyCZbYaYrjOr3w/EsY18PdvtsTmDfpUQe8HwDjXlPeCCUgliZjXLOVBxSjiOvPeOSwvopwIHKWQmYbwywg==

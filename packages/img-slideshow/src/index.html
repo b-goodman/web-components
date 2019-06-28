@@ -11,7 +11,13 @@
 </head>
 <body>
 
-  <img-slideshow base-url="https://picsum.photos" src='["/id/100/200/300", "/id/101/200/300", "/id/102/200/300"]' interval="2000" />
+  <img-slideshow base-url="https://picsum.photos" src='["/id/100/200/300", "/id/101/200/300", "/id/102/200/300"]' interval="3000" />
 
 </body>
+
+<script>
+  document.querySelector("img-slideshow").addEventListener( "slidetransition", (e) => {
+    console.log(e.detail)
+  })
+</script>
 </html>
