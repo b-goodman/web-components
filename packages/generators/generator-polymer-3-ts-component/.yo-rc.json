@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Ben Goodman",
+      "authorEmail": "bgoodman@wolfram.com",
+      "authorUrl": ""
+    }
+  }
+}

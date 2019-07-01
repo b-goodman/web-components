@@ -1,0 +1,38 @@
+:host {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+::slotted(.split), ::slotted(.gutter.gutter-horizontal) {
+    float: top;
+}
+
+::slotted(.gutter.gutter-horizontal) {
+    cursor: col-resize;
+    width: 20px;
+    height: 100%;
+    background: black;
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg=='); */
+}
+
+::slotted(.gutter.gutter-vertical) {
+    cursor: row-resize;
+    height: 100%;
+    width: 20px;
+    background: black;
+}
+
+/* .gutter.gutter-vertical {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+} */
+
+
+
+

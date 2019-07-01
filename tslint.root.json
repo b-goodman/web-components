@@ -1,0 +1,29 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark": [true, "double"],
+        "class-name":true,
+        "interface-name": false,
+        "only-arrow-functions": true,
+        "no-unnecessary-initializer": true,
+        "one-variable-per-declaration": true,
+        "ordered-imports": true,
+        "space-before-function-paren": true,
+        "typedef-whitespace": true,
+        "switch-final-break": true,
+        "eofline": true,
+        "linebreak-style": true,
+        "semicolon": true,
+        "trailing-comma": true,
+        "callable-types": true,
+        "member-ordering": false,
+        "variable-name": false,
+        "no-console": false,
+        "member-access": false
+    },
+    "rulesDirectory": []
+}
