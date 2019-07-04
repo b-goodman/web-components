@@ -1,17 +1,25 @@
+/* webpack.dvl.conf.js */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-  mode: "production",
-  entry:{
-    app:[
-        path.resolve( __dirname, "src/index.ts")
+  mode: "development",
+  entry: {
+    app: [
+        'webpack-dev-server/client?http://localhost:8080', // live reload
+        './src/index'
     ]
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true
   },
   output: {
     filename: '[name].js',
@@ -44,29 +52,6 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.css']
   },
-  optimization: {
-    minimizer: [
-        new TerserPlugin({
-            terserOptions: {
-            output: {
-                comments: false
-            }
-            }
-        })
-    ],
-    runtimeChunk: false,
-    splitChunks: {
-        cacheGroups: {
-            default: false,
-            commons: {
-                test: /[\\/]node_modules[\\/]/,
-                name: "vendor",
-                chunks: "all",
-                minChunks: 2
-            }
-        }
-    }
-  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -77,6 +62,7 @@ module.exports = {
       template: './index.html',
       inject: true,
     }),
+    // new StyleExtHtmlWebpackPlugin(),
     new CopyWebpackPlugin([
       // {
       //   from: path.resolve(__dirname, '../static'),
@@ -88,5 +74,6 @@ module.exports = {
       }
     ]),
     new webpack.IgnorePlugin(/vertx/),
+    new webpack.HotModuleReplacementPlugin(),
   ]
 };

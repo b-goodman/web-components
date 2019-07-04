@@ -8,6 +8,7 @@
     "lerna": "^3.15.0"
   },
   "dependencies": {
-    "@lerna/cli": "^3.13.0"
+    "@lerna/cli": "^3.13.0",
+    "generator-polymer-3-ts-component": "file:./packages/generators/generator-polymer-3-ts-component"
   }
 }

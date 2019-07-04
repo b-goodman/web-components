@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "../../../tslint.root.json"
+    ],
+    "jsRules": {},
+    "rules": {
+
+    },
+    "rulesDirectory": []
+}
