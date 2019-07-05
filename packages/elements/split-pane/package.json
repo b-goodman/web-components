@@ -18,6 +18,7 @@
     "@polymer/decorators": "^3.0.0",
     "@polymer/polymer": "3.2.0",
     "@webcomponents/webcomponentsjs": "^2.2.10",
+    "set-attribute-tuples": "^1.0.1",
     "short-uuid": "^3.1.1",
     "split-js": "^1.0.1",
     "split.js": "^1.5.11"

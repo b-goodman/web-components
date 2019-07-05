@@ -6,7 +6,7 @@ import {splitCSS} from "./styles";
 import Split from "split.js";
 import shortUUID from "short-uuid";
 
-import { setAttributes } from "set-attribute-tuples";
+import setAttributes from "set-attribute-tuples";
 
 export class SplitPane extends PolymerElement {
 
