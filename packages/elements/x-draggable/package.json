@@ -1,13 +1,22 @@
 {
   "name": "x-draggable",
   "version": "1.0.0",
-  "description": "",
+  "description": "Wrap this arround any element to make it draggable.",
   "main": "./dist/index.js",
   "files": [
-    "dist"
+    "./dist/index.js",
+    "./dist/webcomponents-loader.js"
   ],
   "license": "MIT",
-  "private": true,
+  "author": {
+    "name": "Ben Goodman",
+    "email": "b@thebgoodman.com",
+    "url": "https://thebgoodman.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-goodman/web-components/tree/master/packages/elements/x-draggable"
+  },
   "flat": true,
   "scripts": {
     "start": "webpack-dev-server --open --config ./webpack.dvl.conf.js",
@@ -15,8 +24,10 @@
     "build": "webpack --config ./webpack.prd.conf.js && cp -r ./dist ./examples && cp ./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js ./examples/dist"
   },
   "dependencies": {
+    "@polymer/decorators": "^3.0.0",
     "@polymer/polymer": "3.2.0",
-    "@webcomponents/webcomponentsjs": "^2.2.10"
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "interactjs": "^1.4.11"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
