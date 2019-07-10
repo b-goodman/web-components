@@ -4,7 +4,7 @@ import * as CodeMirror from "codemirror";
 import * as template from "./template.html";
 import "codemirror/lib/codemirror.css";
 import "../node_modules/codemirror/theme/monokai.css?name=theme-monokai";
-import "../node_modules/codemirror/mode/javascript/javascript.js.js";
+import "../node_modules/codemirror/mode/javascript/javascript.js";
 
 export class CodeMirrorElem extends PolymerElement {
 
