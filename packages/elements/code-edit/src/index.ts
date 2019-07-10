@@ -6,7 +6,7 @@ import "codemirror/lib/codemirror.css";
 import "../node_modules/codemirror/theme/monokai.css?name=theme-monokai";
 import "../node_modules/codemirror/mode/javascript/javascript.js";
 
-export class CodeMirrorElem extends PolymerElement {
+export class CodeEdit extends PolymerElement {
 
     public editor: CodeMirror.Editor = null;
     public value: string = "";
@@ -97,4 +97,4 @@ export class CodeMirrorElem extends PolymerElement {
 
 }
 
-customElements.define('code-mirror', CodeMirrorElem);
+customElements.define('code-edit', CodeEdit);

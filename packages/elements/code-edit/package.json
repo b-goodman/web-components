@@ -12,7 +12,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config ./webpack.dev.conf.js",
     "start:examples": "serve examples",
-    "build": "webpack --config ./webpack.prod.conf.js && cp -r ./dist ./examples && cp ./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js ./examples/dist"
+    "build": "webpack --config ./webpack.prod.conf.js && cp ./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js ./dist"
   },
   "dependencies": {
     "@polymer/polymer": "3.2.0",
